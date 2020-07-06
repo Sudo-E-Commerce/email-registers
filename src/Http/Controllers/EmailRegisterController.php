@@ -125,7 +125,7 @@ class EmailRegisterController extends AdminController
         }
         // lọc trạng thái
         if (isset($status) && $status != '') {
-            $data_query = $data_query->where('status',$status);
+            $data_exports = $data_exports->where('status',$status);
         }
         $data_exports = $data_exports->where('status', '<>', -1)->get();
         // Mảng export
