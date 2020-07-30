@@ -38,3 +38,12 @@ Mặc định package sẽ tạo ra giao diện quản lý cho email đăng ký 
 - Vị trí cấu hình được đặt tại `config/SudoModule.php`
 - Để có thể phân quyền, chúng ta có thể đặt đoạn cấu hình trên tại `config('SudoModule.modules')`
  
+### Sử dụng ###
+
+Thêm để thêm Email đăng ký hãy gửi ajax đến link dưới đây với param là Email nhập vào từ input
+
+	{domain}/ajax/email_registers
+	method: POST
+	param: {
+		email: email
+	}

@@ -150,4 +150,5 @@ class EmailRegisterController extends AdminController
         }
         return \Excel::download(new \Sudo\Base\Export\GeneralExports($data), $data['file_name'].'.xlsx');
     }
+
 }
