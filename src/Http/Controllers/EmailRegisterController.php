@@ -32,9 +32,9 @@ class EmailRegisterController extends AdminController
         $listdata->search('status', 'Trạng thái', 'array', config('app.status'));
         $listdata->searchBtn('Xuất Excel', route('admin.email_registers.exports'), 'primary', 'fas fa-file-excel');
         // Build các button hành động
-        $listdata->btnAction('status', 1, __('Table::table.active'), 'info', 'fas fa-window-close');
-        $listdata->btnAction('status', 2, __('Table::table.no_active'), 'success', 'fas fa-edit');
-        $listdata->btnAction('delete', -1, __('Table::table.trash'), 'danger', 'fas fa-trash');
+        $listdata->btnAction('status', 1, __('Translate::table.active'), 'info', 'fas fa-window-close');
+        $listdata->btnAction('status', 2, __('Translate::table.no_active'), 'success', 'fas fa-edit');
+        $listdata->btnAction('delete', -1, __('Translate::table.trash'), 'danger', 'fas fa-trash');
         // Build bảng
         $listdata->add('name', 'Tên người gửi', 1);
         $listdata->add('', 'Thời gian', 0, 'time');
